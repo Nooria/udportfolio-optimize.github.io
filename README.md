@@ -8,7 +8,7 @@ This is the link of the portfolio page https://rawgit.com/Nooria/udportfolio-opt
 
 - Added media query for print.css
 - Removed link to google web font since I found it was not necessary.
-- Created a smaller pizzeria_115px.jpg for the front page.
+- Resized and Compressed pizzeria_115px.jpg and profilepic.jpg images for the front page.
 - Inlined the style.css code.
 - Added async attribute for analytics.js since this is not needed for
 rendering.
