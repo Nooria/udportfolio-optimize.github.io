@@ -6,7 +6,7 @@ This is the link of the portfolio page https://cdn.rawgit.com/Nooria/udportfolio
 
 **In this project I optimize few things to achieves a target PageSpeed score:**
 
-- Added media query for print.css
+- Added media query for print.css.
 - Removed link to google web font since I found it was not necessary.
 - Resized and Compressed pizzeria_115px.jpg and profilepic.jpg images for the front page.
 - Inlined the style.css code.
