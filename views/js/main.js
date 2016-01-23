@@ -450,7 +450,7 @@ var resizePizzas = function(size) {
     var container =  document.getElementsByClassName('randomPizzaContainer');
     var dx = determineDx(container[0], size);
     var newwidth = (container[0].offsetWidth + dx) + 'px';
-   for (var i = 0, len = container.length; i < len; i++) {
+   for (var i = 0; len = container.length; i < len; i++) {
       container[i].style.width = newwidth;
     }
   };
@@ -500,7 +500,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.getElementsByClassName("mover");
+  var items = document.getElementsByClassName('mover');
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
