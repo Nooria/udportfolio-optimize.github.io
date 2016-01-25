@@ -41,14 +41,13 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
 so the Web API call will be faster. References
 https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassNamehttps://github.com/udacity/fend-office-hours/tree/master/Web%20Optimization/Effective%20Optimizations%20for%2060%20FPS
 
-- change ``` var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);``` to ```document.getElementsByClassName()``` so the Web API call will be faster. References
-https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassNamehttps://github.com/udacity/fend-office-hours/tree/master/Web%20Optimization/Effective%20Optimizations%20for%2060%20FPS
-
 - ```document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;```
 I create a local variable to save document.getElementsByClassName('randomPizzaContainer') outside the loop (e.g. var container = document.getElementsByClassName('randomPizzaContainer')), so the DOM is not explicitly touched in every iteration!
 
 /** Outside the for statement/loop*/
 var container =  document.getElementsByClassName('randomPizzaContainer');
+var dx = determineDx(container[0], size);
+var newwidth = (container[0].offsetWidth + dx) + 'px';
 // Other Statements;
 
 /** Inside the for statement/loop*/
