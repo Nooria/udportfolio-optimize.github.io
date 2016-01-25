@@ -24,7 +24,7 @@ rendering.
       case "3":
       document.querySelector("#pizzaSize").innerHTML = "Large";
       return;
-      default:
+      default;
       console.log("bug in changeSliderLabel");
       }
      }
